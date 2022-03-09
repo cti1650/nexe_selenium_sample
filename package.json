@@ -1,0 +1,12 @@
+{
+  "name": "nexe_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cti1650/nexe_test.git",
+  "license": "MIT",
+  "dependencies": {
+    "global": "^4.4.0",
+    "nexe": "^4.0.0-beta.19",
+    "selenium-webdriver": "^4.1.1"
+  }
+}
