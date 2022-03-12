@@ -4,8 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/cti1650/nexe_test.git",
   "license": "MIT",
+  "scripts":{
+    "compile:mac":"nexe src/index.js --target mac-x64-12.8.0",
+    "compile:win":"nexe src/index.js --target windows-x64--12.8.0",
+    "compile:linux":"nexe src/index.js --target linux-x64"
+  },
   "dependencies": {
-    "global": "^4.4.0",
     "nexe": "^4.0.0-beta.19",
     "selenium-webdriver": "^4.1.1"
   }
