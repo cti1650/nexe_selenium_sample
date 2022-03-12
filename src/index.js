@@ -1,22 +1,9 @@
 const webdriver = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 
-let os = "linux"
-
-for(var i = 0;i < process.argv.length; i++){
-    if(~process.argv[i].indexOf("mac-")){
-        os = "mac_m1"
-        break
-    }
-    if(~process.argv[i].indexOf("windows-")){
-        os = "windows"
-        break
-    }
-}
-
 const driver = new webdriver.Builder()
     .withCapabilities(webdriver.Capabilities.chrome())
-    .setChromeService(new chrome.ServiceBuilder(__dirname + `/chrome/${os}/chromedriver${os==="windows"?".exe":""}`)) // windows用に出力する場合はchromedriver.exe
+    .setChromeService(new chrome.ServiceBuilder(__dirname + '/chrome/chromedriver')) // windows用に出力する場合はchromedriver.exe
     .build();
 
 
