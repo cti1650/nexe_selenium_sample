@@ -1,9 +1,9 @@
+require('chromedriver');
 const webdriver = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 
 const driver = new webdriver.Builder()
-    .withCapabilities(webdriver.Capabilities.chrome())
-    .setChromeService(new chrome.ServiceBuilder(__dirname + '/chrome/chromedriver')) // windows用に出力する場合はchromedriver.exe
+    .forBrowser('chrome')
     .build();
 
 

@@ -51,5 +51,5 @@
 - [Downloads - ChromeDriver - WebDriver for Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - [nexe Tips - Qiita](https://qiita.com/maruware/items/f0a3650d71726eadfdcf)
 - [nexe/nexe: 🎉 create a single executable out of your node.js apps](https://github.com/nexe/nexe#target-string--object)
-
+- [chromedriver - npm](https://www.npmjs.com/package/chromedriver)  
 
