@@ -2,17 +2,16 @@
 
 ## 使い方　
 
-- nexeをインストール
+- 必要なパッケージをインストール
     ```
-    yarn add nexe
+    yarn
     ```
 
-- 必要なChromeDriverをダウンロード
+- nodeで動作検証
 
-    [ChromeDriverダウンロードページ](https://sites.google.com/a/chromium.org/chromedriver/downloads)
-
-    chrome配下に`chromedriver`ファイルを格納して下さい
-    windowsは`chromedriver.exe`ファイルを格納して下さい
+    ```
+    node src/index.js
+    ```
 
 - nexeでコンパイルを実行
 
@@ -20,24 +19,27 @@
         ```
         node_modules/.bin/nexe src/index.js --target windows-x64--12.8.0
         ```
+        or
         ```
-        compile:win
+        yarn compile:win
         ```
 
     - MAC用
         ```
         node_modules/.bin/nexe src/index.js --target mac-x64-12.8.0
         ```
+        or
         ```
-        compile:mac
+        yarn compile:mac
         ```
 
     - Linux用
         ```
         node_modules/.bin/nexe src/index.js --target linux-x64
         ```
+
         ```
-        compile:linux
+        yarn compile:linux
         ```
 
 ## 参考記事

@@ -1,11 +1,9 @@
 require('chromedriver');
 const webdriver = require('selenium-webdriver');
-const chrome = require('selenium-webdriver/chrome');
 
 const driver = new webdriver.Builder()
     .forBrowser('chrome')
     .build();
-
 
 async function main() {
     await driver.get('https://www.google.com/');
